@@ -9,7 +9,7 @@ Must have python installed.
 <pre><code>metro.py [Your Data Sheet] [Output HTML File]</pre></code>
 where [Your Data Sheet] is the document you created in the last step and [Output HTML File] is the specified name of the html file</li>
 <li>Open your output html file to ensure the timeline is correct. Occasionaly glitches can occur. To fix mistakes, simply edit the data sheet and run the python command listed above again.</li>
-<li>Make sure to copy the "Stylesheets" folder with the output html file, else the timeline will not appear</li>
+<li>Once you're done, use your output html file anywhere</li>
 </ul>
 #Markup Rules
 A timeline can have a maximum of 3 concurrent lines, though line colors can change at any time. Lines must be specified in the following order:
