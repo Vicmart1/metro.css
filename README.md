@@ -107,4 +107,4 @@ Mostly just Internet Explorer. The CSS resizes the timeline with the window, on 
 #Questions/Bugs?
 Contact Vicmart1 at gotovicmart@gmail.com
 
-Copyright 2015 Vicmart Inc. All Rights Reserved
+<footer>Copyright 2015 Vicmart Inc. All Rights Reserved</footer>
