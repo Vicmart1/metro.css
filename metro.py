@@ -115,7 +115,7 @@ with open(sys.argv[1], 'r+') as r:
             drawJunction(line, f)
         elif line[0] == '\"':
             try:
-                createDescription(line.split('\"')[1], lines[i+1][0]=='>' or lines[i+2][0]=='>', f)
+                createDescription(line.split('\"')[1], lines[i+1][0]=='>' or lines[i+2][0]=='>' or lines[i+3][0]=='>' or lines[i+4][0]=='>', f)
             except:
                 createDescription(line.split('\"')[1], 0, f)
             if lines[i+1][0] == '<' and len(lines[i+1].split(":")) > 2 and lines[i+1].split(":")[2] == 'up\n':
