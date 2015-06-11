@@ -1,5 +1,5 @@
 #metro.css
-Creates a neat custom timeline stylized like a metro map. 
+Creates a neat custom timeline stylized like a metro map. Sample can be seen <a href="http://htmlpreview.github.io/?https://github.com/Vicmart1/metro.css/blob/master/sample.html">here</a>.
 #Prerequisites
 Must have python installed.
 #Usage
