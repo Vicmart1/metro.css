@@ -51,7 +51,7 @@ For any line, the basic order of code is the following:
 <li>Define the station and its title/subtitle</li>
 <li>Define any junctions present at that station</li>
 </ol>
-Each step contains declarations. Each declaration must be written on a seperate line, though steps can contain more than one declaration. Each line is seperated by a hashtag o
+Each step contains declarations. Each declaration must be written on a seperate line, though steps can contain more than one declaration.
 #### Step 1
 Each line must have a color, and the color is defined in this step. The declaration of a Purple line of length 250 pixels is
 <pre><code>purple:250</code></pre>
