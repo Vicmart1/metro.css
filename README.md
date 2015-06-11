@@ -102,7 +102,7 @@ If you don't want the line to fade, replace "fade" with "solid" in the above com
 Up to four line junctions may be declared per station: up-left, up-right, down-left, down-right
 
 #Known Issues
-Mostly just Internet Explorer. The CSS resizes the timeline with the window, on desktop and mobile.
+Mostly just Internet Explorer. The CSS has been tested to work on most other major browsers, including desktop and mobile.
 
 #Questions/Bugs?
 Contact Vicmart1 at gotovicmart@gmail.com
