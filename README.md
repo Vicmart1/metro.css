@@ -33,7 +33,7 @@ Each line (and the timeline bounds) are seperated by a line of hyphens (the leng
 
 If a line ends before another, or is created after another line, the order is the same. Whitespaces can be used to position lines before/after others start. If a line ends and then begins again in the same position (left, for instance), a whitespace line segment must be used in between the end of the first line and the begining of the second. An example of this can be seen in the sample file.
 
-The timeline bounds are a simple one-line declaration of the begining and end dates of the timeline ruler displayed on the left of the page. For example, a timeline begining in 2009 and enging in 2015 would be declared as
+The timeline bounds are a simple one-line declaration of the begining and end dates of the timeline ruler displayed on the left of the page. For example, a timeline begining in 2009 and ending in 2015 would be declared as
 <pre><code>2009:2015</code></pre>
 Timeline bounds can currently only be declared in terms of years. However, quarter years may also be used. The following decimals can extend the timeline bounds without adding another year
 <ul>
