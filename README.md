@@ -1,8 +1,8 @@
-#metro.css
+# metro.css
 Creates a neat custom timeline stylized like a metro map. Sample can be seen <a href="http://htmlpreview.github.io/?https://github.com/Vicmart1/metro.css/blob/master/sample.html">here</a>.
-#Prerequisites
+# Prerequisites
 Must have python installed.
-#Usage
+# Usage
 <ul>
 <li>Create a data sheet using the markup rules specified below in a simple .txt format</li>
 <li>Run the following command:
@@ -11,7 +11,7 @@ where [Your Data Sheet] is the document you created in the last step and [Output
 <li>Open your output html file to ensure the timeline is correct. Occasionaly glitches can occur. To fix mistakes, simply edit the data sheet and run the python command listed above again.</li>
 <li>Once you're done, use your output html file anywhere</li>
 </ul>
-#Markup Rules
+# Markup Rules
 A timeline can have a maximum of 3 concurrent lines, though line colors can change at any time. Lines must be specified in the following order:
 <ul>
 <li>Timeline bounds</li>
@@ -76,13 +76,13 @@ Remember, if you have adjacent lines, they will not be cleared as expected. For 
 For dotted lines, the command is two colons followed by the length. So for a dotted line of length 325, the command would be
 <pre><code>::325</code></pre>
 
-####Step 2
+#### Step 2
 Station titles are simply the title surrounded by quotation marks. The following command declares a station named "Grand Central"
 <pre><code>"Grand Central Station"</code></pre>
 For subtitles, add a colon and then the subtitle. For the above station to have the subtitle "New York City" the code would be
 <pre><code>"Grand Central Station:New York City"</code></pre>
 
-####Step 3
+#### Step 3
 Junctions can go to the left or right, can come up from the top or the bottom, and can fade or stay solid. To simple declare a junction facing right and down, the command would be
 <pre><code>></code></pre>
 The color of this junction line would be the color of the adjacent line of that side. If you had a Red line with a Pink line adjacent the right, this command would produce a pink junction line. For a junction facing left and down, the command would be
@@ -101,10 +101,10 @@ If you don't want the line to fade, replace "fade" with "solid" in the above com
 
 Up to four line junctions may be declared per station: up-left, up-right, down-left, down-right
 
-#Known Issues
+# Known Issues
 Mostly just Internet Explorer. The CSS has been tested to work on most other major browsers, including desktop and mobile.
 
-#Questions/Bugs?
+# Questions/Bugs?
 Contact Vicmart1 at gotovicmart@gmail.com
 
 <footer>Copyright 2015 Vicmart Inc. All Rights Reserved</footer>
