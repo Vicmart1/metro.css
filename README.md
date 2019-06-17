@@ -1,5 +1,5 @@
 # metro.css
-Creates a neat custom timeline stylized like a metro map. Sample can be seen <a href="http://htmlpreview.github.io/?https://github.com/Vicmart1/metro.css/blob/master/sample.html">here</a>.
+Creates a neat timeline stylized like a metro map. Sample can be seen <a href="http://htmlpreview.github.io/?https://github.com/Vicmart1/metro.css/blob/master/sample.html">here</a>.
 # Prerequisites
 Must have python installed.
 # Usage
@@ -8,9 +8,8 @@ Must have python installed.
 <li>Run the following command:
 <pre><code>metro.py [Your Data Sheet] [Output HTML File]</pre></code>
 where [Your Data Sheet] is the document you created in the last step and [Output HTML File] is the specified name of the html file</li>
-<li>Open your output html file to ensure the timeline is correct. Occasionaly glitches can occur. To fix mistakes, simply edit the data sheet and run the python command listed above again.</li>
-<li>Once you're done, use your output html file anywhere</li>
 </ul>
+
 # Markup Rules
 A timeline can have a maximum of 3 concurrent lines, though line colors can change at any time. Lines must be specified in the following order:
 <ul>
@@ -19,7 +18,7 @@ A timeline can have a maximum of 3 concurrent lines, though line colors can chan
 <li>Right Line</li>
 <li>Center Line</li>
 </ul>
-Each line (and the timeline bounds) are seperated by a line of hyphens (the length does not matter). Thus, the order is actually
+Each line (and the timeline bounds) are seperated by a line of hyphens (length does not matter). 
 <ul>
 <li>Timeline bounds</li>
 <li>###########</li>
@@ -31,11 +30,11 @@ Each line (and the timeline bounds) are seperated by a line of hyphens (the leng
 <li>###########</li>
 </ul>
 
-If a line ends before another, or is created after another line, the order is the same. Whitespaces can be used to position lines before/after others start. If a line ends and then begins again in the same position (left, for instance), a whitespace line segment must be used in between the end of the first line and the begining of the second. An example of this can be seen in the sample file.
+If a line ends before another, or is created after another line, the order does not change. Whitespaces can be used to position lines before/after others start. If a line ends and then begins again in the same position (left, for instance), a whitespace line segment must be used in between the end of the first line and the begining of the second. An example of this can be seen in the sample file.
 
-The timeline bounds are a simple one-line declaration of the begining and end dates of the timeline ruler displayed on the left of the page. For example, a timeline begining in 2009 and ending in 2015 would be declared as
+The timeline bounds are one-line declarations of the begining and end dates of the timeline ruler displayed on the left of the page. For example, a timeline begining in 2009 and ending in 2015 would be declared as
 <pre><code>2009:2015</code></pre>
-Timeline bounds can currently only be declared in terms of years. However, quarter years may also be used. The following decimals can extend the timeline bounds without adding another year
+Timeline bounds can only be declared in terms of years. However, quarter years may also be used. The following fractions can extend the timeline bounds without adding another year
 <ul>
 <li>.0 - Adds another tick for the next year (Not shown by default)</li>
 <li>.25 - Adds ticks up to March of that year</li>
@@ -45,7 +44,7 @@ Timeline bounds can currently only be declared in terms of years. However, quart
 For example, to display tick marks up to June of 2018, the following command is acceptable
 <pre><code>2009:2018.5</code></pre>
 
-For any line, the basic order of code is the following:
+For any line, the basic order of the data input is the following:
 <ol>
 <li>Define the line color and length before the next station</li>
 <li>Define the station and its title/subtitle</li>
@@ -53,7 +52,7 @@ For any line, the basic order of code is the following:
 </ol>
 Each step contains declarations. Each declaration must be written on a seperate line, though steps can contain more than one declaration.
 #### Step 1
-Each line must have a color, and the color is defined in this step. The declaration of a Purple line of length 250 pixels is
+Each line must have a color, and the color is defined in this step. Ex: The declaration of a Purple line of length 250 pixels is
 <pre><code>purple:250</code></pre>
 After the initial declaration of color, the user does not need to specify again what the line color is in subsequent steps. Thus, the following line segment of length 175 would be
 <pre><code>:175</code></pre>
