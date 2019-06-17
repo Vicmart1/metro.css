@@ -62,15 +62,15 @@ The following colors are available for use: Red, Pink, Orange, Black, Gray, Blue
 
 Lines may have adjacent lines running as well. For example, a Red line may have a Blue line on the left and a Green line on the right. To declare a segment like this with a length of 400, the code would be
 <pre><code>blue::green:400</code></pre>
-("Red" is excluded as it was declared previously as the line color) Like before, once adjacent lines are declared the first time, they do not need to be declared again. To declare an individual adjacent line, say a blue line on the left, just remove the other colors as shown
+("Red" is excluded as it was declared previously as the line color) Like before, once adjacent lines are declared the first time, they do not need to be declared again. To declare an individual adjacent line, say a blue line on the left, remove the other colors as shown
 <pre><code>blue:::400</code></pre>
-If you would like to remove a line, simple declare the above again without the color you want to remove. To remove the blue line in the above example, the code would be
+To remove a line, simply declare the above command again without the color to remove. To remove the blue line in the above example, the code would be
 <pre><code>:red:green:400</code></pre>
 Notice how the colons stay. If the same were to happen to the green line, the code would be no different
 <pre><code>:red::400</code></pre>
 To create a whitespace line segment, use a hyphen instead of a color. For example, to declare a whitespace line segment of 100, write 
 <pre><code>-:100</code></pre>
-Remember, if you have adjacent lines, they will not be cleared as expected. For a line with two adjacent lines, the following command would be the equivalent to the above command
+If you have adjacent lines, they will not be cleared as expected. For a line with two adjacent lines, the following command would be the equivalent to the above command
 <pre><code>-:-:-:100</code></pre>
 For dotted lines, the command is two colons followed by the length. So for a dotted line of length 325, the command would be
 <pre><code>::325</code></pre>
@@ -101,9 +101,9 @@ If you don't want the line to fade, replace "fade" with "solid" in the above com
 Up to four line junctions may be declared per station: up-left, up-right, down-left, down-right
 
 # Known Issues
-Mostly just Internet Explorer. The CSS has been tested to work on most other major browsers, including desktop and mobile.
+Mostly just Internet Explorer. The CSS has been tested to work on most other major browsers, both desktop and mobile.
 
-# Questions/Bugs?
+# Questions/Bugs
 Contact Vicmart1 at gotovicmart@gmail.com
 
 <footer>Copyright 2015 Vicmart Inc. All Rights Reserved</footer>
